@@ -1,9 +1,9 @@
 function greatest(x, y) {
-    if (x > y) {
-        return x
-    } else {
-        return y
-    }
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
 }
 
 console.log(greatest(1, 2)); // Expected result: 2

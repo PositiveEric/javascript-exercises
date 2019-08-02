@@ -2,8 +2,7 @@
  * Implement map method which works similarly as https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  */
 
-
- // x => x * 2 (short version, also works, for me (currently) harder to understand)
+// x => x * 2 (short version, also works, for me (currently) harder to understand)
 const doubleUp = x => {
   return x * 2;
 };
