@@ -22,7 +22,7 @@ function anagrams(stringA, stringB) {
     .join("")
     .trim()
     .replace(/!/g, "");
-    
+
   let newStringB = stringB
     .toLowerCase()
     .split("")
