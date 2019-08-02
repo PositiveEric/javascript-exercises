@@ -6,7 +6,9 @@
  */
 
 // You are allowed to change only this function
-function convertToUSD() {}
+function convertToUSD() {
+  return "$" + price * 1.4;
+}
 
 const product = "You don't know JS";
 const price = 19.99;

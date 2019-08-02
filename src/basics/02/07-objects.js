@@ -33,3 +33,14 @@ const writers = [
     alive: true
   }
 ];
+
+function aliveWriter() {
+  for (let i = 0; i < writers.length; i++) {
+    let elements = writers[i];
+    console.log(
+      `Hi, my name is ${elements.firstName} ${elements.lastName}. 
+      I am ${elements.age} years old, and work as a ${elements.occupation}.`
+    );
+  }
+}
+aliveWriter();

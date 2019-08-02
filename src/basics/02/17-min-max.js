@@ -1,6 +1,10 @@
-const min = array => {};
+const min = array => {
+  return Math.min(...array);
+};
 
-const max = array => {};
+const max = array => {
+  return Math.max(...array);
+};
 
 console.log(min([1, 2, 3, 4, 5])); // Expected result: 1
 console.log(min([9, -3, 6])); // Expected result: -3
