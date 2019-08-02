@@ -14,6 +14,22 @@
  * s.pop(); // returns 1
  */
 
-class Stack {}
+class Stack {
+  constructor() {
+    this.data = [];
+  }
+  // Add items to the end of an array
+  push(item) {
+    this.data.push(item);
+  }
+  // Remove an item from the end of an array
+  pop() {
+    return this.data.pop();
+  }
+  // Shows the last element
+  peek() {
+    return this.data[this.data.length - 1];
+  }
+}
 
 module.exports = Stack;

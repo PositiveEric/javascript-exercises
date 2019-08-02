@@ -10,6 +10,17 @@
  * reverse('Greetings!') === '!sgniteerG'
  */
 
-function reverse(str) {}
+function reverse(str) {
+  // ko dara ... ?
+  const arr = [...str];
+  let reverseStr = "";
+
+  while (arr.length) {
+    //.pop() Removes an item from the end of an array
+    reverseStr = reverseStr + arr.pop();
+  }
+
+  return reverseStr;
+}
 
 module.exports = reverse;

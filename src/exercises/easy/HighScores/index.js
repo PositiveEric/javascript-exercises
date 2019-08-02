@@ -9,11 +9,28 @@ class HighScores {
     this.scores = input;
   }
 
-  get latest() {}
+  get latest() {
+    return this.scores[this.scores.length - 1];
+  }
 
-  get personalBest() {}
+  get personalBest() {
+    let best = 0;
+    for (let i in this.scores) {
+      let currentScore = this.scores[1];
+      if (currentScore > best) {
+        best = currentScore;
+      }
+    }
+    return best;
+  }
 
-  get personalTopThree() {}
+  get personalTopThree() {
+    let scores = this.scores;
+    let sortedScores = scores.sort((a, b) => a - b);
+    let topThree = sortedScores.slice(-3);
+    let reversedTopThree = topThree.sort((a, b) => b - a);
+    return reversedTopThree;
+  }
 }
 
 module.exports = HighScores;

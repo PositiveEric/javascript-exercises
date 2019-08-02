@@ -10,7 +10,32 @@
  */
 
 class Words {
-  count(str) {}
+  count(str) {
+    let obj = {};
+    let splitArray = str
+      .toLowerCase()
+      .trim()
+      .replace(/(\s+|\t+)/g, " ")
+      .split(" ");
+
+    // console.log(splitArray);
+    for (let i = 0; i < splitArray.length; i++) {
+      if (
+        obj[`${splitArray[i]}`] == undefined &&
+        obj[`${splitArray[i]}`] !== ""
+      ) {
+        obj[`${splitArray[i]}`] = 1;
+      } else {
+        obj[`${splitArray[i]}`] += 1;
+      }
+      if (obj.hasOwnProperty("constructor")) {
+        obj[`${splitArray[i]}`] = 1;
+      }
+    }
+
+    console.log(obj);
+    return obj;
+  }
 }
 
 module.exports = Words;
