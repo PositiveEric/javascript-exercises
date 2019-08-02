@@ -1,4 +1,4 @@
-import { Odometer, FuelGauge } from "./car";
+const { Odometer, FuelGauge } = require("./car.js");
 
 describe("Car", () => {
   let fuelGauge;
@@ -118,4 +118,3 @@ describe("Car", () => {
     });
   });
 });
-
