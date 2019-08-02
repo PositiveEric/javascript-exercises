@@ -11,11 +11,8 @@
 
 function maxChar(str) {
   const characterMap = {};
-  // The count start at 0
   let max = 0;
-  // Will return the max character in an empty string
   let maxChar = "";
-
   // Creating a character map
   for (let char of str) {
     if (characterMap[char]) {
@@ -26,7 +23,6 @@ function maxChar(str) {
       characterMap[char] = 1;
     }
   }
-
   // Finding the most commonly used character
   for (let char in characterMap) {
     if (characterMap[char] > max) {
@@ -34,9 +30,6 @@ function maxChar(str) {
       maxChar = char;
     }
   }
-  console.log(maxChar);
-
-  // Returns the max character
   return maxChar;
 }
 

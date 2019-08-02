@@ -36,7 +36,6 @@ function steps(n) {
     }
     steps++;
   }
-  console.log(steps);
   return steps;
 }
 

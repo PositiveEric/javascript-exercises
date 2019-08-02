@@ -21,7 +21,6 @@ function vowels(string) {
       vowelsCount += 1;
     }
   }
-  console.log(vowelsCount);
   // Returns the total count of vowels in a string
   return vowelsCount;
 }

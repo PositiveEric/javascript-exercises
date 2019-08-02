@@ -21,8 +21,6 @@ function validate(number) {
     result += Math.pow(parseInt(digit), power);
   });
 
-  console.log(result);
-
   if (result === number) return true;
   return false;
 }
