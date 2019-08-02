@@ -9,28 +9,28 @@
  */
 
 function count(matrix) {
-    let currentNum = 0;
-    for (let i in matrix) {
-        currentNum + matrix[i]
-    } 
-    return currentNum;
+  let currentNum = 0;
+  for (let i in matrix) {
+    currentNum + matrix[i];
+  }
+  return currentNum;
 }
 
 function columnsToRows(matrix) {
-    let newMatrix = []
-    for (let i = 0; i < matrix.length; i++) {
-        let column = []
-        newMatrix.push(column)
-        for (let j = 0; j < matrix.length; j++) {
-            column.push(matrix[j][i])
-        }
+  let newMatrix = [];
+  for (let i = 0; i < matrix.length; i++) {
+    let column = [];
+    newMatrix.push(column);
+    for (let j = 0; j < matrix.length; j++) {
+      column.push(matrix[j][i]);
     }
-    return newMatrix;
+  }
+  return newMatrix;
 }
 
 function isMatrixMagical(input) {
-    // console.log(input)
-    return input
+  // console.log(input)
+  return input;
 }
 
-module.exports = isMatrixMagical
+module.exports = isMatrixMagical;
