@@ -1,5 +1,5 @@
 const helloWorld = function() {
-  return "";
+  return "Hello World";
 };
 
-console.log(); // Expected result: "Hello World"
+console.log(helloWorld()); // Expected result: "Hello World"

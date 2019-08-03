@@ -1,5 +1,5 @@
 function trim(word) {
-  return "word".trim();
+  return word.trim();
 }
 
 const result = trim("CODELEX  ");

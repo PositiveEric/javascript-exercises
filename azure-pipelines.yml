@@ -6,8 +6,6 @@ pool:
 
 steps:
   - script: |
-      docker build -t javascript-exercises:latest.
-      docker run javascript-exercises:latest run prettier:check
-      docker run javascript-exercises:latest run test:easy
-      docker run javascript-exercises:latest run test:medium
+      docker build -t javascript-exercises:latest .
+      docker run javascript-exercises:latest run prettier:check 
     displayName: 'Build'

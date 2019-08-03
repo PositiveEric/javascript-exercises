@@ -6,7 +6,11 @@
  */
 
 // You are allowed to edit only this function
-function remove(arr, valueToRemove) {}
+function remove(arr, valueToRemove) {
+  return arr.filter(function(element) {
+    return element != valueToRemove;
+  });
+}
 
 const numbers = [1, 2, 3];
 const names = ["John", "Alice", "Ellen"];

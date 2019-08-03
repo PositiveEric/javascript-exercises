@@ -8,9 +8,15 @@
  */
 
 // You are allowed to change this function
-function convertToUSD(price) {}
+function convertToUSD(price) {
+  const conversionFee = price * 0.01;
+  return "$" + (price * 1.25 + conversionFee);
+}
 // You are allowed to change this function
-function convertToBRL(price) {}
+function convertToBRL(price) {
+  const conversionFee = price * 0.01;
+  return "R$" + (price * 4.71 + conversionFee);
+}
 
 const product = "You don't know JS";
 const price = 12.5;
