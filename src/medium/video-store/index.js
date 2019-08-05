@@ -1,10 +1,10 @@
 const inquirer = require("inquirer");
 const { VideoStore } = require("./videostore");
 const store = new VideoStore();
-store.addMovie('"The Matrix"', 4)
-store.addMovie('"Godfather II"', 4)
-store.addMovie('"Star Wars Episode IV: A New Hope"', 5)
-store.addMovie('"American Pie II"', 2)
+store.addMovie('"The Matrix"', 4);
+store.addMovie('"Godfather II"', 4);
+store.addMovie('"Star Wars Episode IV: A New Hope"', 5);
+store.addMovie('"American Pie II"', 2);
 
 async function rentVideo() {
   const { choices, name } = await inquirer.prompt([
@@ -47,7 +47,7 @@ async function returnVideo() {
         choices: store.asChoicesUserMovies(name)
       }
     ]);
-    
+
     // User giving rating after returning movie
     const { userRating } = await inquirer.prompt([
       {
@@ -57,13 +57,14 @@ async function returnVideo() {
         choices: store.asChoicesUserMovieRatings(name)
       }
     ]);
-    console.log(userRating)
+    console.log(userRating);
     store.returnMovies(movie, userRating);
-    
   } else {
-    console.log("You don't have any movies to return. Would you like a new movie?")
-    return
-  } 
+    console.log(
+      "You don't have any movies to return. Would you like a new movie?"
+    );
+    return;
+  }
 }
 
 async function fillVideoStore() {
@@ -77,7 +78,7 @@ async function fillVideoStore() {
     addMore = more;
     store.addMovie(movieName, movieRating);
     console.log(`Thanks, here's a list of movies: ${store.printContent}`);
-    console.log(movieRating + " " + typeof movieRating)
+    console.log(movieRating + " " + typeof movieRating);
   }
 }
 

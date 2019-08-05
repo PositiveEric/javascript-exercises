@@ -4,13 +4,15 @@ class Video {
     this.number = parseInt(rating); //To get raiting as an integer.
     this.allUserRatings = []; //For storing user raitings
     this.user = null;
-    this.allUserRatings.push(this.number); //User and Admin ratings combined 
+    this.allUserRatings.push(this.number); //User and Admin ratings combined
   }
-  
+
   get print() {
     return this.isRented
       ? `[${this.name}]`
-      : `${this.name}  ⤙⤚  Average user rating: ${this.getAverageUserRating()}, ${this.movieStatistics()}% enjoyed the movie.`;
+      : `${
+          this.name
+        }  ⤙⤚  Average user rating: ${this.getAverageUserRating()}, ${this.movieStatistics()}% enjoyed the movie.`;
   }
 
   rent(user) {
