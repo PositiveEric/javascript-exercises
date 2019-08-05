@@ -14,8 +14,8 @@
  * He answers 'Whatever.' to anything else.
  */
 
-// filter unwanted characters (test() checks 'text' included  chars)
 const hey = bobsMessage => {
+  // filter unwanted characters (test() checks 'text' included  chars)
   const filter = text => /^[A-Z \%\^\*\@\#\$\(\*\^0-1]*$/.test(text);
   // removes whitespace from both sides with trim()
   bobsMessage = bobsMessage.trim();
